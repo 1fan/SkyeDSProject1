@@ -23,6 +23,7 @@ public class MyDictionaryEntity {
      */
     public void feedMapFromFile(String filepath) throws IOException {
         Path path = FileSystems.getDefault().getPath(filepath);
+        // Copy and paste from https://stackoverflow.com/questions/29061782/java-read-txt-file-to-hashmap-split-by ,not tested
         Map<String, String> mapFromFile = Files.lines(path)
                 .filter(s -> s.matches("^\\w+:\\w+"))
                 .collect(Collectors.toMap(k -> k.split(":")[0], v -> v.split(":")[1]));
