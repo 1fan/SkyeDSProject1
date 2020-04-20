@@ -6,6 +6,7 @@ public class DictionaryQueryResponseEntity implements Serializable {
     private boolean successOrNot;
 
     public String getMeanings() {
+    	
         return meanings;
     }
 
@@ -20,4 +21,7 @@ public class DictionaryQueryResponseEntity implements Serializable {
     public void setSuccessOrNot(boolean successOrNot) {
         this.successOrNot = successOrNot;
     }
+    
+    
+    
 }

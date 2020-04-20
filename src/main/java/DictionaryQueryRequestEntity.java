@@ -1,8 +1,11 @@
+
 import java.io.Serializable;
+import java.util.List;
 
 public class DictionaryQueryRequestEntity implements Serializable {
 
     private String word;
+    private List<String> set_meanings;
     private String meanings;
     private OPERATION operation;
 
@@ -15,11 +18,16 @@ public class DictionaryQueryRequestEntity implements Serializable {
     }
 
     public String getMeanings() {
+    	
+    	
+    			
         return meanings;
     }
 
-    public void setMeanings(String meanings) {
-        this.meanings = meanings;
+    public List<String> setMeanings(List<String> set_meanings) {
+        
+    	
+    	return set_meanings;
     }
 
     public OPERATION getOperation() {

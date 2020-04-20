@@ -2,3 +2,4 @@ cat:I'm a cat
 dog:I'm a dog
 car:I'm a car
 burger:I'm a burger
+apple: the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
