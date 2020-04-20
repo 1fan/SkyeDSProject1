@@ -1,0 +1,4 @@
+cat:I'm a cat
+dog:I'm a dog
+car:I'm a car
+burger:I'm a burger
