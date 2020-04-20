@@ -26,8 +26,8 @@ public class DictQueryThread extends Thread {
         while (true) {
             DictionaryQueryResponseEntity rsp = null;
             try {
-                try {
-                	//
+                try {  
+                	
                     DictionaryQueryRequestEntity req = (DictionaryQueryRequestEntity) is.readObject();
                     if(req != null && req.getOperation() != null) {
                         switch (req.getOperation()) {
